@@ -39,10 +39,10 @@ class Annuaire
 
     public static void AfficherContacts()
     {
-        Console.WriteLine("\nListe des contacts :");
+        Console.WriteLine("Liste des contacts :");
         if (nombreContacts == 0)
         {
-            Console.WriteLine("Aucun contact enregistré.");
+            Console.WriteLine("Aucun contact enregistré");
             return;
         }
 
@@ -55,7 +55,7 @@ class Annuaire
     /* partie Xavier */
     public static void RechercherContact()
     {
-        Console.Write("\nEntrez le nom à rechercher : ");
+        Console.Write("Entrez le nom à rechercher : ");
         string nomRecherche = Console.ReadLine();
         bool trouve = false;
 
@@ -70,13 +70,13 @@ class Annuaire
 
         if (!trouve)
         {
-            Console.WriteLine("Aucun contact trouvé.");
+            Console.WriteLine("Aucun contact trouvé");
         }
     }
 
     public static void SupprimerContact()
     {
-        Console.Write("\nEntrez le nom du contact à supprimer : ");
+        Console.Write("Entrez le nom du contact à supprimer : ");
         string nomASupprimer = Console.ReadLine();
         bool trouve = false;
 
@@ -91,14 +91,14 @@ class Annuaire
                 contacts[nombreContacts - 1] = null;
                 nombreContacts--;
                 trouve = true;
-                Console.WriteLine("Contact supprimé.");
+                Console.WriteLine("Contact supprimé");
                 break;
             }
         }
 
         if (!trouve)
         {
-            Console.WriteLine("Aucun contact trouvé.");
+            Console.WriteLine("Aucun contact trouvé");
         }
     }
 }
