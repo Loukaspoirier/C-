@@ -9,7 +9,7 @@ class Contact
 
 class Annuaire
 {
-    public static Contact[] contacts = new Contact[100];
+    public static Contact[] contacts = new Contact[10];
     public static int nombreContacts = 0;
 
     /* partie Loukas */
